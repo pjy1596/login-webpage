@@ -28,7 +28,7 @@ mongoose
   .catch(() => {
     "error happened...";
   });
-// 밑에 두 라인도 까먹음
+// 밑에 두 라인도 까먹음!
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
