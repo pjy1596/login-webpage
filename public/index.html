@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1>Hangman</h1>
+    <p>Find the hidden word - Enter a letter</p>
+    <div class="game-container">
+      <div class="figure-container">
+        <svg width="350px" height="200px">
+          <line x1="40" y1="20" x2="100" y2="20"></line>
+          <line x1="100" y1="20" x2="100" y2="40"></line>
+          <line x1="40" y1="20" x2="40" y2="180"></line>
+          <line x1="10" y1="180" x2="70" y2="180"></line>
+          <circle cx="100" cy="60" r="20" class="human"></circle>
+          <line x1="100" y1="80" x2="100" y2="120" class="human"></line>
+          <line x1="70" x2="100" y1="75" y2="95" class="human"></line>
+          <line x1="130" x2="100" y1="75" y2="95" class="human"></line>
+          <line x1="70" x2="100" y1="140" y2="120" class="human"></line>
+          <line x1="130" x2="100" y1="140" y2="120" class="human"></line>
+        </svg>
+        <div class="wrong-letter-container">
+          <!-- <span>Wrong</span>
+          <p>e,r,t,y</p> -->
+        </div>
+        <div class="guess-letter-container">
+          <!-- <div class="eachLetter">h</div>
+          <div class="eachLetter">e</div>
+          <div class="eachLetter">l</div>
+          <div class="eachLetter">l</div>
+          <div class="eachLetter">o</div> -->
+        </div>
+      </div>
+      <div class="pop-up-container">
+        <div class="pop-up">
+          <h3 class="comment"></h3>
+          <button class="btn">Play Again</button>
+        </div>
+      </div>
+      <div class="notification-container">
+        <span>You have already entered this letter</span>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

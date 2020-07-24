@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #34495e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+line {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.figure-container {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  padding: 15px;
+}
+
+circle {
+  stroke: #fff;
+  stroke-width: 4;
+  fill-opacity: 0;
+}
+.human {
+  display: none;
+}
+.eachLetter {
+  font-size: 30px;
+  border-bottom: 1px solid #2980b9;
+  margin: 0 3px;
+  width: 20px;
+  height: 50px;
+  text-align: center;
+}
+.wrong-letter-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+.guess-letter-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 40px;
+}
+.pop-up-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.pop-up {
+  background-color: #2980b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 10px 3px (rgba(0, 0, 0, 0.1));
+  padding: 20px;
+}
+.pop-up button {
+  color: #2980b9;
+  padding: 5px;
+}
+.pop-up button:active {
+  transform: scale(0.9);
+}
+.pop-up button:focus {
+  outline: 0;
+}
+button {
+  cursor: pointer;
+}
+.notification-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -50px;
+  transition: transform 0.5s ease;
+}
+.notification-container.show {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  position: absolute;
+  transform: translateY(-50px);
+  /* 이거 틀렸음 */
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.space {
+  margin-left: 20px;
+}

@@ -56,5 +56,7 @@ app.use((req, res, next) => {
 });
 app.use("/", require("./routes/index"));
 app.use("/users", require("./routes/users"));
+app.use("/users/hangman", express.static("public"));
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, console.log(`server started on PORT ${PORT}`));

@@ -1,3 +1,24 @@
-<h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<div
+  class="container border border-primary d-flex flex-column justify-content-center"
+>
+  <h1 class="mt-4" style="margin-bottom: 10px; text-align: center;">
+    Dashboard
+  </h1>
+  <h3
+    class="d-block p-2 bg-primary text-white mb-3 rounded-pill"
+    style="text-align: center;"
+  >
+    Welcome <%= name %>
+  </h3>
+  <a href="/users/logout" class="btn btn-pill btn-info mb-10 rounded-pill"
+    >Logout</a
+  >
+  <div class="container">
+    <a
+      href="/users/hangman"
+      class="btn btn-pill btn-success rounded-pill mb-10"
+      style="margin-top: 30px; margin-bottom: 15px;"
+      >Hi <%= name %>!! Play hangman game!</a
+    >
+  </div>
+</div>
